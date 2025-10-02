@@ -142,6 +142,73 @@ body {
     }
     
  
+    /* Grid layout for kortet */
+.productCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* billede til venstre, tekst til højre */
+    gap: 2rem;
+    align-items: start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+
+  .productImageWrapper {
+    position: relative;
+  }
+  
+  .productImage {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+
+  
+
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .productName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: bold;
+  }
+  
+
+  .buyButton {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .buyButton:hover {
+    background-color: crimson;
+  }
+  
 
 
 
